@@ -4,19 +4,19 @@ public class School {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Please enter day as Capitilized format");
+        System.out.println("***Please enter day as Capitilized format***");
         System.out.println("Enter Day: ");
         String day = sc.next();
 
         switch (day) {
             case "Monday":
-            case "Wedneday":
-                System.out.println("Basket Ball");
-                break;
+            case "Wednesday":
+                                System.out.println("Basket Ball");
+                                break;
             case "Tuesday":
             case "Friday":
-                System.out.println("Tennis");
-                break;
+                            System.out.println("Tennis");
+                            break;
             
             case "Thursday":
                 System.out.println("Cricket");

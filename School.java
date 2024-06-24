@@ -10,19 +10,16 @@ public class School {
 
         switch (day) {
             case "Monday":
+            case "Wedneday":
                 System.out.println("Basket Ball");
                 break;
             case "Tuesday":
-                System.out.println("Tennis");
-                break;
-            case "Wednesday":
-                System.out.println("Basket Ball");
-                break;
-            case "Thursday":
-                System.out.println("Cricket");
-                break;
             case "Friday":
                 System.out.println("Tennis");
+                break;
+            
+            case "Thursday":
+                System.out.println("Cricket");
                 break;
             case "Saturday":
                 System.out.println("Exercise");

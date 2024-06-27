@@ -18,7 +18,7 @@ public class Prime{
 		// Read Number
 		int number = input.nextInt();
 		int count = 2;
-		for(int i = 2; i <= n/2; i++) {
+		for(int i = 2; i <= number/2; i++) {
 			if(number%i==0){
 				count++;
 			}

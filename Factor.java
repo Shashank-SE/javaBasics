@@ -15,6 +15,7 @@ public class Factor {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter a number: ");
         int num = input.nextInt();
+        int count = 2;
         if(num>0) {
             System.out.print("Factors are: ");
             System.out.print(1+",");
@@ -22,9 +23,11 @@ public class Factor {
             for(int i = 2; i <= num/2; i++) {
                 if(num%i==0) {
                     System.out.print(i + ",");
+                    count++;
                 }
             }
             System.out.println(num);
+            System.out.println("Total factor of "+num+" is: "+count);
         } else {
             System.out.println("Invalid input....");
         }

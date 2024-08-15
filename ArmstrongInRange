@@ -1,3 +1,7 @@
+/*  WRITE A JAVA PROGRAM TO PRINT ARMSTRONG NUMBER BETWEEN THE GIVEN RANGE.
+    StartingPoint- 100
+    EndingPoint-   500
+    output- 153 370 371 407 */
 import java.util.Scanner;
 public class ArmstrongInRange {
 	public static int findLen(int num) {

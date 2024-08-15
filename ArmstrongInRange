@@ -1,0 +1,41 @@
+import java.util.Scanner;
+public class ArmstrongInRange {
+	public static int findLen(int num) {
+		int count = 0;
+		while(num>0) {
+			int rem = num%10;
+			count++;
+			num /= 10;
+		}
+		return count;
+	}
+	public static int calcExp(int base, int exp) {
+		int pow = 1;
+		for(int i = 1; i <= exp; i++) {
+			pow *= base;
+		}
+		return pow;
+	}
+	public static boolean isArmstrong(int num) {
+		int num1 = num;
+		int sum = 0;
+		int exp = findLen(num);
+		while(num>0) {
+			int rev = num%10;
+			sum += calcExp(rev, exp);
+			num /= 10;
+		}
+		return num1 == sum;
+	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int sPoint = sc.nextInt();
+		int ePoint = sc.nextInt();
+		for(int num = sPoint; num <= ePoint; num++) {
+			if(isArmstrong(num)) {
+				System.out.println(num);
+			}
+		}
+		sc.close();
+	}
+}
